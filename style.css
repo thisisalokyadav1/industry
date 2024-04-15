@@ -124,7 +124,7 @@ button:hover {
 .our-services {
     width: 100%;
     background-color: rgb(237, 227, 213);
-    over-flow:hidden;
+    overflow:hidden;
 }
 
 .we-serve {
