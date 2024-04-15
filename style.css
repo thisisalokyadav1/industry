@@ -122,9 +122,9 @@ button:hover {
 
 /* section our services */
 .our-services {
-    height: 130vh;
     width: 100%;
     background-color: rgb(237, 227, 213);
+    over-flow:hidden;
 }
 
 .we-serve {
@@ -184,9 +184,6 @@ button:hover {
     }
     .about-section_container{
         height: 120vh;
-    }
-    .our-services{
-        height: 270vh;
     }
     .services{
         flex-direction: column;
