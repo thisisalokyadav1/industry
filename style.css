@@ -259,4 +259,7 @@ h2 {
     .my-team_container {
         width: 90%;
     }
+    . my-team_container{
+        text-align:center;
+}
 }
