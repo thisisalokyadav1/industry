@@ -163,6 +163,10 @@ h2 {
     background-color: rgb(47, 114, 231);
     border: none;
 }
+. my-team_info{
+    width:100%;
+    text-align: center;
+    padding: 30px;}
 
 /* section our services */
 .our-services {
