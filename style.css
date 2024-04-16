@@ -17,6 +17,7 @@ a {
     text-decoration: none;
     color: black;
 }
+
 /* header */
 
 nav {
@@ -25,7 +26,7 @@ nav {
     display: flex;
     align-items: center;
     padding: 5px;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .logo-container {
@@ -120,11 +121,54 @@ button:hover {
     background-color: rgb(179, 179, 204);
 }
 
+/* my team */
+.my-team {
+    padding: 3rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.my-team_container {
+    padding: 2rem;
+    margin: 2rem;
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.my-team_container p,
+h2 {
+    margin: 10px;
+}
+
+.my-team_container h2 {
+    color: rgb(2, 2, 30);
+}
+
+.my-team_container span {
+    color: rgb(77, 76, 74);
+    margin-left: 8px;
+}
+
+.my-team_container p span {
+    color: rgb(47, 114, 231);
+}
+
+.my-team_container button {
+    padding: 5px 50px 5px;
+    background-color: rgb(47, 114, 231);
+    border: none;
+}
+
 /* section our services */
 .our-services {
     width: 100%;
     background-color: rgb(237, 227, 213);
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .we-serve {
@@ -154,6 +198,15 @@ button:hover {
     color: rgb(111, 113, 114);
 }
 
+.aerospace-container,
+.oil-container,
+.automotive-container {
+    height: 80vh;
+    width: 80vw;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
 /* footer */
 .copyright-footer {
     height: 80px;
@@ -165,32 +218,45 @@ button:hover {
 }
 
 /* media queries */
-@media only screen and(max-width:1200px){
-    .services{
-        
-        flex-direction: column;
+/* @media only screen and(max-width:1250px) {
+    .services {
+
+        flex-direction: row;
         flex-wrap: wrap;
     }
-}
-@media only screen and (max-width:768px){
-    .logo-container{
+
+    .container {
+        width: 30%;
+    }
+} */
+
+@media only screen and (max-width:480px) {
+    .logo-container {
         width: 25%;
         font-size: 12px;
     }
+
     .nav-menu ul {
         font-size: smaller;
         width: 75%;
-        gap:20px;
+        gap: 20px;
     }
-    .about-section_container{
+
+    .about-section_container {
         height: 120vh;
     }
-    .services{
-        flex-direction: column;
+
+    .services {
+        flex-direction: row;
         flex-wrap: wrap;
     }
+
     .container {
         width: 97%;
         text-align: center;
+    }
+
+    .my-team_container {
+        width: 90%;
     }
 }
