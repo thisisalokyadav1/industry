@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+   * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.mainbody {
+  background-image: url("https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGluZHVzdHJ5fGVufDB8fDB8fHww");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.contact {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background: url(bg.jpg);
+}
+.content {
+  max-width: 800px;
+  text-align: center;
+}
+.content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+.content p {
+  font-weight: 500;
+  color: #fff;
+}
+.container {
+  width: 100%;
+  display: flex;
+    /* flex-direction: row; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.contactInfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  position: relative;
+  display: flex;
+  padding: 20px 0;
+}
+
+.icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+.text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #fff;
+  flex-direction: row;
+  font-weight: 300;
+}
+.text h3 {
+  font-weight: 500;
+  color: #00bcd4;
+}
+.ContactForm {
+  width: 40%;
+  padding: 40px;
+  background: #fff;
+}
+h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+.inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.inputbox input, 
+.inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5%;
+  color: #666;
+}
+
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:valid ~ span {
+  color: #e91e63;
+  transform: translateY(-20px);
+}
+.inputbox input[type="submit"] {
+  width: 100px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media (max-width: 991px) {
+  .container {
+    flex-direction: column;
+  }
+ .contactInfo {
+    width: 100%;
+  }
+} 
+   </style>
+
+</head>
+
+<body>
+    <div class="mainbody">
+        <section class="contact">
+            <div class="content">
+                <h2>contact us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+                    reiciendis possimus explicabo, nostrum eos doloremque earum animi
+                    culpa vitae numquam laudantium a
+                </p>
+            </div>
+            <div class="container">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>4562 sugar camp faruknagar,<br> Gurgaon ,haryana delhi</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        
+                        <div class="text">
+                            <h3>phone</h3>
+                            <p>9835-3425-4567</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        
+                        </div>
+                        
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>Delta@2345gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ContactForm">
+                    <form action="">
+                        <h2>Send Massage</h2>
+                        <div class="inputbox">
+                            <input type="tex" name="" required="required" />
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="" required></textarea>
+                            <span>Type your massage......</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="send" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
